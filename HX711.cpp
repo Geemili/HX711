@@ -97,7 +97,7 @@ float HX711::get_units(byte times) {
 }
 
 void HX711::tare(byte times) {
-	double sum = read_average(times);
+	long sum = read_average(times);
 	set_offset(sum);
 }
 
